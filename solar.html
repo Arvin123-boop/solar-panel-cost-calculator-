@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="solar.css">
+<title>Solar Output Calculator</title>
+</head>
+<body>
+<div class="box">
+<h2>Solar Panel Output Calculator</h2>
+
+<label>Fläche (m²)</label>
+<input id="area" type="number">
+
+<label>Wirkungsgrad (0–1)</label>
+<input id="eff" type="number" step="0.01">
+
+<label>Sonnenstunden pro Tag</label>
+<input id="sun" type="number" step="0.1">
+
+<label>Strompreis pro kWh (€)</label>
+<input id="price" type="number" step="0.01">
+
+<label>Anzahl der Tage</label>
+<input id="days" type="number" value="365">
+
+<button onclick="calc()">Berechnen</button>
+
+<div id="out"></div>
+</div>
+<script src="cal.js"></script>
+</body>
+</html>
